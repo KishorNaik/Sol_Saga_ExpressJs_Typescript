@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "utils"
+		},
+		{
+			"path": "api"
+		}
+	]
+}
