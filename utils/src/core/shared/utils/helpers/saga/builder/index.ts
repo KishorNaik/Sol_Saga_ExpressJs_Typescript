@@ -29,9 +29,9 @@ export class SagaOrchestratorBuilder<TContext> {
 		return this.results.get(label) as TResult;
 	}
 
-  public getContext(): ISagaContext<TContext> {
-  return this.sagaCtx;
-}
+	public getContext(): ISagaContext<TContext> {
+		return this.sagaCtx;
+	}
 
 	public async runAsync(resumeFromLabel?: string): Promise<void> {
 		this.logger.info(`[${this.sagaName}] ▶️ Starting saga run`);
@@ -67,9 +67,10 @@ export class SagaOrchestratorBuilder<TContext> {
 							);
 
 							let allCompensated = true;
-              this.logger.info(`[${this.sagaName}] executedSteps:`, executedSteps?.length);
-              if(executedSteps?.length === 0)
-                continue;
+							this.logger.info(
+								`[${this.sagaName}] executedSteps:`,
+								executedSteps?.length
+							);
 
 							for (const executed of executedSteps.reverse()) {
 								try {
