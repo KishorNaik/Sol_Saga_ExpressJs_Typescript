@@ -2,7 +2,6 @@
 
 A lightweight implementation of the Saga pattern using TypeScript and Express.js, designed to model long-running workflows with failure handling and rollback logic — cleanly, predictably, and with zero jargon.
 
----
 
 ## 📌 Overview
 
@@ -15,7 +14,7 @@ It’s built using:
 - ✅ Custom logging with `winston`
 - ✅ Express.js for demonstrating request-based orchestration
 
----
+
 
 ## ❗ Problem
 
@@ -27,7 +26,6 @@ In many real-world systems — like creating a user, assigning roles, and notify
 
 Traditional `try/catch` approaches become messy, unscalable, and hard to maintain as workflows grow.
 
----
 
 ## ✅ Benefits
 
@@ -39,14 +37,13 @@ By applying the Saga Pattern:
 - 🧪 Context and step results are preserved for traceability
 - 📜 Easy to extend with conditional steps, checkpoints, or audit logs
 
----
+
 
 ## 🚀 Installation
 
 ### 🐳 Install Docker Desktop
 - Download and install Docker: [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
----
 
 ### 💾 Setup Redis Using Docker
 
@@ -134,7 +131,6 @@ cd <your-project-directory>
 - This demo uses bullmq to simulate inter-module coordination a lightweight message queue built on Redis. It handles internal step communication and orchestrated retries using saga semantics.
 - This demo uses [Pipeline Workflow](https://github.com/KishorNaik/Sol_pipeline_workflow_expressJs) provides a structured approach to executing sequential operations, ensuring safe execution flow, error resilience, and efficient logging.
 
----
 
 ## Source Code
 - Helper
