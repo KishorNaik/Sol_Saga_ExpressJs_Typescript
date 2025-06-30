@@ -82,10 +82,10 @@ export class ModuleAService implements IModuleAService {
 
             //@Testing
             //throw new Error('test');
-            return ResultFactory.error(
-                StatusCodes.INTERNAL_SERVER_ERROR,
-                `Failed to send message to queue: ${queue.action.name}`
-              );
+            //return ResultFactory.error(
+            //     StatusCodes.INTERNAL_SERVER_ERROR,
+            //     `Failed to send message to queue: ${queue.action.name}`
+            //   );
 
 						// Values
 						const valueObject = {
